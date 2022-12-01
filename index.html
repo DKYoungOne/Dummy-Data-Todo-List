@@ -9,8 +9,23 @@
 </head>
 <body>
     <button onclick="fetchTodos()">Fetch Todos</button>
+    <br>
     <button onclick="logTodos()">Log Todos</button>
-    <button onclick="populateTodos()">Populate Todos</button>
+    
+    <br>
+    <button onclick="populateTodos(arrayOfTodos)">Populate Todos</button>
+    <br>
+    <button onclick="clearTodos()">Clear Todos</button>
+    <br>
+    <label for="userIdNumber">User ID (1-10)</label>
+    <input type="number" id="userIdNumber" min="1" max="10">
+    <br>
+    <button onclick="filterTodos()">Filter by User ID</button>
+    <br>
+    <button onclick="filterTodoByCompletion(true)">Filter by Completed</button>
+    <br>
+    <button onclick="filterTodoByCompletion(false)">Filter by Incomplete</button>
+
     <ol id="todo-list">
     <!-- LIs will go here -->
     </ol>
